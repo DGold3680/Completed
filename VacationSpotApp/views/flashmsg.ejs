@@ -1,0 +1,12 @@
+<%if(msg[0]){%>
+    <div class="alert alert-success alert-dismissible fade show h-auto" role="alert">
+      <%=msg%>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } %>
+<%if(errMsg[0]){%>
+      <div class="alert alert-danger alert-dismissible fade show h-auto" role="alert">
+        <%=errMsg%>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <% } %>

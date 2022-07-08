@@ -1,0 +1,27 @@
+<%layout('template.ejs')-%>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5 mt-4">
+<h1 class="display-6 mb-3">Changed your mind?</h1>
+<form method="POST" action="/yelpies/<%=id%>/review/<%=q%>?_method=PATCH">
+  <textarea class="form-control mb-1"name="review[msg]" id="description" rows="5" cols="30" placeholder="describe your experience"><%=review.msg%></textarea>
+    <fieldset class="starability-fade">
+                <input type="radio" id="no-rate" class="input-no-rate" name="review[rating]" value="0" checked aria-label="No rating." />
+                <input type="radio" id="first-rate1" name="review[rating]" value="1" />
+                <label for="first-rate1" title="Terrible">1 star</label>
+                <input type="radio" id="first-rate2" name="review[rating]" value="2" />
+                <label for="first-rate2" title="Not good">2 stars</label>
+                <input type="radio" id="first-rate3" name="review[rating]" value="3" />
+                <label for="first-rate3" title="Average">3 stars</label>
+                <input type="radio" id="first-rate4" name="review[rating]" value="4" />
+                <label for="first-rate4" title="Very good">4 stars</label>
+                <input type="radio" id="first-rate5" name="review[rating]" value="5" />
+                <label for="first-rate5" title="Amazing">5 stars</label>
+              </fieldset>
+             
+    <button class="btn btn-success">Update review</button>
+</form>
+</div>
+</div>
+</div>

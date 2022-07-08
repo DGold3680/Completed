@@ -1,0 +1,52 @@
+
+
+<%layout('template.ejs')-%>
+  
+  <div class="w-50 ms-2 m-lg-auto text-lg-center">
+    <h1 class="display-lg-5 display-6 text-info ">Add New Spot</h1>
+    <form enctype="multipart/form-data" action="/yelpies" method="POST" accept-charset="utf-8" class="needs-validation" novalidate>
+        <label for="title" class="form-label">Spot title</label>
+        <input class="form-control"type="text" name="camp[title]" id="title" placeholder="spot name" required>
+       <div class="valid-feedback">
+      Looks good!
+    </div>
+
+      <label for="price" class="form-label">Spot price</label>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">$</span>
+        </div>
+        <input class="form-control" type="number" name="camp[price]" id="price" placeholder="price" required>
+        <div class="valid-feedback">
+       Looks good!
+       </div>
+      </div>
+
+      <label for="location" class="form-label">Spot location</label>
+        <input class="form-control"type="text" name="camp[location]" id="location" placeholder="location" required>
+      <div class="valid-feedback">
+      Looks good!
+    </div>
+        <label for="description" class="form-label">Description</label>
+      <textarea class="form-control" name="camp[description]" id=description rows="8" cols="40"placeholder="spot description" required></textarea>
+       <div class="valid-feedback">
+      Looks good!
+      </div>
+      <div class="my-lg-4 d-lg-flex justify-content-between">
+      <div><label for="image" class="form-label d-lg-none">Add pictures:</label>
+ <input type="file" name="image" id="image" multiple></div>
+      <button class="btn btn-success my-2 mt-lg-0">Add Spot</button>
+     </div>
+
+
+
+
+    
+    </form>
+  </div>
+    
+    
+ 
+
+  
+    
