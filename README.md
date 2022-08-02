@@ -10,5 +10,7 @@ RESTFUL API
 Templating (EJS)
 Authentication and Authorization (passport)
 Third party map library (mapbox)
-Image Uploads (with clouEdinary)
+Image Uploads (with cloudinary)
+
+checkout the app @ https://vacation-spot.herokuapp.com/yelpies
 
