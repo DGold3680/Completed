@@ -1,5 +1,5 @@
 # VacationSpot
-Simple fullstack app made as my take on Colt Steele's YelpCamp project.
+Fullstack app made as my take on Colt Steele's YelpCamp project.
 
 Framework:Express.
 Database:MongoDb.
